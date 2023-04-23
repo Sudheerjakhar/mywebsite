@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Welcome to my website</title>
+    <!-- <link rel="stylesheet" href="css/style.css"/> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap"
+      rel="stylesheet" -->
+    <!-- /> -->
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+html {
+  font-size: 62.5%;
+}
+/* *******************************************************************************************************************
+                        header section start
+
+******************************************************************************************************************* */
+.header {
+  background: linear-gradient(
+    rgba(144, 50, 56, 0.771),
+    rgba(50, 89, 179, 0.71)
+  );
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+  width: 100%;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+.logo img {
+  height: 4.8rem;
+  justify-content: center;
+}
+.navbar ul {
+  display: flex;
+  gap: 6rem;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+}
+.navbar a:hover,
+.navbar .active {
+  color: rgb(201, 196, 43);
+}
+
+.main::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: url("/bg.jpg") no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.9;
+}
+/* *******************************************************************************************************************
+                        main section start
+
+******************************************************************************************************************* */
+
+.heading {
+  margin-bottom: 1.2rem;
+  font-size: 3.7rem;
+  color: rgb(82, 143, 227);
+}
+.main-section {
+  padding: 3.2rem;
+  width: 65rem;
+  height: 45rem;
+  margin: auto;
+  justify-content: center;
+  /* border: 2px solid red; */
+  text-align: center;
+  /* background-color: rgba(59, 59, 56, 0.273); */
+  color: white;
+  transform: translateY(30rem);
+  font-size: 1.4rem;
+}
+.button {
+  background-color: #495683;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 4.4rem 2px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(164, 70, 86);
+}
+/* *******************************************************************************************************************
+                        section section start
+
+******************************************************************************************************************* */
+.skills{
+    /* border: 2px solid red; */
+    transform: translateY(30rem);
+    background-color: rgb(110, 116, 118);
+}
+.section-heading {
+  font-size: 3.7rem;
+  color: rgb(82, 143, 227);
+  justify-content: center;
+  width: 35rem;
+  margin: auto;
+  padding-left: 8rem;
+}
+.container{
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  
+}
+.item-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(177, 211, 211);
+  margin: 1.2rem 0;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2,1fr); */
+  
+}
+.item-2 {
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  background-color: rgb(195, 171, 217);
+  margin: 1.2rem 0;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2,1fr); */
+}
+.item-3 {
+  display: flex;
+  background-color: rgb(216, 216, 172);
+  justify-content:space-between;
+  align-items: center;
+  margin: 1.2rem 0;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2,1fr); */
+}
+.css-icon{
+  width: 15rem;
+  height: 15rem;
+}
+.skill-images-1{
+  margin-left: 2rem;
+}
+.skill-images-2{
+  margin-left: 18rem;
+}
+.skill-images-3{
+  margin-left: 18rem;
+}
+.about {
+  justify-content: center;
+  align-items: center;
+  width: 55rem;
+  margin-right: 3rem;
+  padding: 1.2rem 0.2rem 1.2rem 4.5rem;
+  font-size: 2rem;
+}
+/* *******************************************************************************************************************
+                        contact section start
+
+******************************************************************************************************************* */
+.contact{
+    /* border: 2px solid blue; */
+    background-color: rgb(233, 233, 217);
+     transform: translateY(34rem);
+     height: 20rem;
+}
+.contact-heading{
+  font-size: 3.7rem;
+  color: rgb(82, 143, 227);
+  justify-content: center;
+  width: 35rem;
+  margin: auto;
+  padding-left: 8rem;
+}
+.contact-container{
+  display: flex;
+  justify-content: space-between;
+}
+.icons{
+  height: 5rem;
+  width: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+/* *******************************************************************************************************************
+                        form section start
+
+******************************************************************************************************************* */
+.table{
+  /* border: 2px solid red; */
+  background: linear-gradient(
+    rgba(95, 174, 159, 0.771),
+    rgba(148, 82, 146, 0.71)
+  );
+  transform: translateY(40rem);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  margin: auto;
+}
+.table-heading{
+  margin: 2.3rem;
+  padding:1.2rem;
+  font-size: 2.7rem;
+  color: rgb(82, 143, 227);
+  justify-content: center;
+  margin: auto;
+}
+.table-s{
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+/* .table-s label{
+  margin: 0.8rem 0;
+  padding: 1rem 0;
+} */
+.text{
+  margin: 4px 0;
+  padding:5px 0;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+.table-lable{
+  margin: 4px 0;
+  padding: 5px 0;
+  font-size: 1.8rem;
+  text-align: center;
+  text-decoration: underline;
+ 
+}
+.btn{
+  background-color:  rgb(91, 61, 91);
+  border-radius:1rem ;
+  margin-top: 3rem;
+  width: 25%;
+  padding: 4px;
+  margin: 3rem auto;
+  color: white;
+  font-size: 1.7rem;
+}.btn:hover{
+  background-color: rgb(164, 70, 86);
+  color: black;
+}
+/* *******************************************************************************************************************
+                        footer section start
+
+******************************************************************************************************************* */
+.footer{
+  transform: translateY(43rem);
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+}
+.footer-p{
+  justify-content: center;
+}
+.rights{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* *****************************************************************/
+           /* responsive part  */
+
+/***************************************************************** */
+
+@media(max-width: 1073px){
+  .container{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    
+  }
+  .item-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .item-2 {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .item-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-images-2{
+    margin: 5rem 8rem 0 8rem
+  }
+  .skill-images-3{
+    margin: 7rem 8rem 0 8rem
+  }
+}
+@media(max-width: 688px){
+    .contact{
+     height: 80rem;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5.8rem;
+}
+.h3{
+  font-size: 3.2rem; 
+}
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons{
+  height: 8rem;
+  width: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="logo.png" alt="logo" /></div>
+      <div class="navbar">
+        <ul>
+          <li class="items" class="active"><a href="#">Home</a></li>
+          <li class="items"><a href="#">About</a></li>
+          <li class="items"><a href="#">Services</a></li>
+          <li class="items"><a href="#">More</a></li>
+          <li class="items"><a href="#">Gallary</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-section">
+        <h1 class="heading">Welcome to my portfolio</h1>
+      </div>
+    </main>
+    <section class="skills">
+      <h1 class="section-heading">MY SKILLS</h1>
+      <div class="container">
+        <div class="item-1">
+          <div class="skill-images-1"><img src="/webdevelopment.png" alt="#" /></div>
+          <div class="about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            expedita sequi soluta in, modi eaque praesentium amet labore quis a
+            aut ut eos tempora provident
+          </div>
+        </div>
+        <div class="item-2">
+          <div class="skill-images-2"><img src="/c lang.png lang.png" alt="#" /></div>
+          <div class="about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            expedita sequi soluta in, modi eaque praesentium amet labore quis a
+            aut ut eos tempora provident 
+          </div>
+        </div>
+        <div class="item-3">
+          <div class="skill-images-3"><ion-icon name="logo-css3" class="css-icon"></ion-icon></div>
+          <div class="about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            expedita sequi soluta in, modi eaque praesentium amet labore quis a
+            aut ut eos tempora provident
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="contact">
+          <h1 class="contact-heading">CONTACT ME</h1>
+          <div class="contact-container">
+                <div class="logo-container">
+                  <a href="https://www.instagram.com/sudheerjakhar07/" target="_blank">                   
+                  <ion-icon name="logo-instagram" class="icons"></ion-icon>
+                   <h3 class="h3">@sudheerjakhar07</h3>
+                </a>
+                </div>
+                <div>
+                  <a href="https://www.facebook.com/sudheerkumar/" target="_blank">
+                  <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                  <h3 class="h3">sudheerjakhar</h3>
+                </a>
+                </div>
+                <div>
+                  <a href="https://www.linkedin.com/in/sudheer-jakhar-215194266" target="_blank">
+                  <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                  <h3 class="h3">sudheerjakhar</h3>
+                </a>
+                </div>
+                <div>
+                  <ion-icon name="logo-whatsapp" class="icons"></ion-icon>
+                  <h3 class="h3">@8562807983</h3>
+                </div>
+          </div>
+    </div>
+    <div class="table">
+      <div class="table-heading"><h2>FILL THIS TO GET ME</h2></div> 
+      <div class="table-s">
+       <label class="table-lable" for="text">NAME:</label>
+       <input  type="text" class="text" placeholder="Enter your name">
+       <label class="table-lable" for="text">COMPANY:</label>
+       <input  type="text" class="text" placeholder="Enter your company name">
+       <label class="table-lable" for="text">MOBILE:</label>
+       <input  type="number" class="text" placeholder="Enter your phone number">
+       <label class="table-lable" for="text">EMAIL:</label>
+       <input  type="text" class="text" placeholder="Enter your email">
+       <button class="btn">submit</button>
+      </div>
+    </div>
+  <footer class="footer">
+    <p class="footer-p">We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+    <!-- Rights-->
+    <p class="rights"><span>©  </span><span class="copyright-year">2023</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+  </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.c
